@@ -30,6 +30,11 @@ function test_version() {
     exit 1
   fi
 
+  echo
+  echo "## DEPRECATION WARNINGS"
+  npx serverless doctor
+  echo
+
   rm .serverless/demo.zip
 }
 
